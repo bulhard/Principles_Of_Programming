@@ -6,7 +6,13 @@ namespace Lesson_01_Strings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Task01_ReverseString.Run();
+
+            // Task02_Parentheses.Run();
+
+            // Task03_SubstringCounter.Run();
+
+            Task04_ExtractSentences.Run();
         }
     }
 }
