@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace Lesson_01_Strings
 {
@@ -11,38 +11,64 @@ namespace Lesson_01_Strings
             string input = Input();
             string word = "submarine";
 
-            string output = ExtractSentences(input, word);
+            string output = ExtractSentences1(input, word);
 
             Output(output);
         }
 
-        private static string ExtractSentences(string input, string word)
+        private static string ExtractSentences1(string input, string word)
         {
-            int startIndex = 0;
-            int length = 0;
-            int dotIndex = 0;
-            string sentence = "";
+            input += " ";
+            var result = "";
+            var startIndex = 0;
+            var dotIndex = input.IndexOf(". ");
 
-            int index = input.IndexOf(word);
-
-            while (index != -1)
+            while (dotIndex != -1)
             {
-                dotIndex = input.IndexOf(".", index + 1);
-                length = dotIndex - startIndex + 1;
+                var length = dotIndex - startIndex + 1;
+                var sentence = input.Substring(startIndex, length);
 
-                sentence += input.Substring(startIndex, length) + Environment.NewLine;
+                if (sentence.Contains(word, StringComparison.InvariantCultureIgnoreCase))
+                {
+                    result += sentence.Trim() + Environment.NewLine;
+                }
 
                 startIndex = dotIndex + 1;
-
-                index = input.IndexOf(word, dotIndex + 1, StringComparison.InvariantCultureIgnoreCase);
+                dotIndex = input.IndexOf(". ", dotIndex + 1);
             }
 
-            return sentence;
+            return result;
+        }
+
+        public static string ExtractSentences2(string input, string patternWord)
+        {
+            //Step 1: fragment phrase.
+            // https://cheatography.com/davechild/cheat-sheets/regular-expressions/
+
+            var patternPhrase = @"(?<=(^|[.!?]\s*))[^ .!?][^.!?]+[.!?]\s{1}";
+            input += " ";
+
+            var matches_1 = Regex
+                .Matches(input, patternPhrase) // step 1
+                .Cast<Match>()
+                .Select(s => s.Value)
+                .Where(w => Regex.IsMatch(w, patternWord, RegexOptions.IgnoreCase)); // step 2
+
+            var sentences = Regex.Matches(input, patternPhrase);
+            var matches_2 = sentences.Where(s => s.Value.Contains(patternWord)).ToList();
+
+            var result = "";
+            foreach (var item in matches_2)
+            {
+                result += item + Environment.NewLine;
+            }
+
+            return result;
         }
 
         private static string Input()
         {
-            return "We are living in a yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of it in 5 days.";
+            return "We are living in a 1.2 yellow submarine. We don't have anything else. Inside the submarine is very tight. So we are drinking all the day. We will move out of submarine in 5 days.";
         }
 
         private static void Output(string output)
