@@ -6,6 +6,9 @@ namespace Lesson_01_Strings
     {
         private static void Main(string[] args)
         {
+            // Examples.SlowNumbersConcatenator();
+            // Examples.ElegantNumbersConcatenator();
+
             // Task01_ReverseString.Run();
 
             // Task02_Parentheses.Run();
@@ -14,7 +17,15 @@ namespace Lesson_01_Strings
 
             // Task04_ExtractSentences.Run();
 
-            Task09_ExtractLetters.Run();
+            // Task05_HideWords.Run();
+
+            // Task06_UrlParser.Run();
+
+            // Task07_RemoveRepeats.Run();
+
+            Task08_SortData.Run();
+
+            // Task09_ExtractLetters.Run();
         }
     }
 }
