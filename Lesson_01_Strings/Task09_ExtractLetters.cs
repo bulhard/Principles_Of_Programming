@@ -35,7 +35,7 @@ namespace Lesson_01_Strings
 
             foreach (char letter in inputArray)
             {
-                result[letter]++;
+                result[(int)letter]++;
             }
 
             return result;
