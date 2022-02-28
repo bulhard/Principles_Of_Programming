@@ -1,10 +1,13 @@
 ﻿using System;
 
-namespace Lesson_02_Classes
+namespace Lesson_02_Classes.Dogs
 {
     // Class declaration
     public class Dog
     { // Opening bracket of the class body
+
+        const string defaultDogName = "[unnamed dog]";
+
         // Field declaration
         private string name;
 
@@ -28,7 +31,7 @@ namespace Lesson_02_Classes
         // Method declaration (non-static)
         public void Bark()
         {
-            Console.WriteLine("{0} said: Wow-wow!", name ?? "[unnamed dog]");
+            Console.WriteLine("{0} said: Wow-wow!", name ?? defaultDogName);
         }
     } // Closing bracket of the class bod
 }

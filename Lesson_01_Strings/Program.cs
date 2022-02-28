@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lesson_02_Classes.Dogs;
+using System;
 
 namespace Lesson_01_Strings
 {
@@ -25,7 +26,12 @@ namespace Lesson_01_Strings
 
             // Task08_SortData.Run();
 
-             Task09_ExtractLetters.Run();
+            Task09_ExtractLetters.Run();
+
+            Dog d1 = new Dog();
+            d1.Name = "Jessie";
+            d1.Bark();
+
         }
     }
 }

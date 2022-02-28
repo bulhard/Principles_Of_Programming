@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lesson_02_Classes
+namespace Lesson_02_Classes.Dogs
 {
     public static class DogMeeting
     {

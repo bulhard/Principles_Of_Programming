@@ -1,4 +1,8 @@
-﻿using System;
+﻿using Lesson_02_Classes.Dogs;
+using Lesson_02_Classes.PointStruct;
+using Lesson_02_Classes.StaticDogCount;
+using Lesson_02_Classes.Students;
+using System;
 
 namespace Lesson_02_Classes
 {
@@ -6,7 +10,13 @@ namespace Lesson_02_Classes
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // DogMeeting.Run();
+
+            // StaticDogTest.Run();
+
+            // PointStructTest.Run();
+
+            StudentTest.Run();
         }
     }
 }

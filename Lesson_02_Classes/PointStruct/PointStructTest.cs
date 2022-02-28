@@ -15,7 +15,7 @@ namespace Lesson_02_Classes.PointStruct
             p.Y++;
         }
 
-        private static void Main()
+        public static void Run()
         {
             PointStruct point = new PointStruct(3, -2);
 

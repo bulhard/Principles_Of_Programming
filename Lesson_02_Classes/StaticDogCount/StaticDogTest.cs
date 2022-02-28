@@ -4,7 +4,7 @@ namespace Lesson_02_Classes.StaticDogCount
 {
     public class StaticDogTest
     {
-        private static void Run()
+        public static void Run()
         {
             Dog dog1 = new Dog("Jackie", 1);
             Dog dog2 = new Dog("Lassy", 2);
