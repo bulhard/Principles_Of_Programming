@@ -17,7 +17,7 @@ namespace Lesson_01_Strings
 
         public static string Input()
         {
-            return "web, mobile, desktop, games, IoT";
+            return "web,  mobile, desktop, games, IoT";
         }
 
         public static string[] SortData(string input)

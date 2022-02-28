@@ -23,9 +23,9 @@ namespace Lesson_01_Strings
 
             // Task07_RemoveRepeats.Run();
 
-            Task08_SortData.Run();
+            // Task08_SortData.Run();
 
-            // Task09_ExtractLetters.Run();
+             Task09_ExtractLetters.Run();
         }
     }
 }

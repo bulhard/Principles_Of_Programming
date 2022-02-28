@@ -11,7 +11,7 @@ namespace Lesson_01_Strings
         {
             Console.WriteLine(DateTime.Now);
             string collector = "Numbers: ";
-            for (int index = 1; index <= 200000; index++)
+            for (int index = 1; index <= 40000; index++)
             {
                 collector += index;
             }
