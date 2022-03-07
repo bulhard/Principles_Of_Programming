@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Lesson_03_Generics.AnimalShelterDemo
 {
-    public class AnimalShelterTest
+    public static class AnimalShelterTest
     {
-        public void RunDogShelter()
+        public static void RunDogShelter()
         {
             AnimalShelter dogsShelter = new AnimalShelter(10);
 
@@ -18,7 +18,14 @@ namespace Lesson_03_Generics.AnimalShelterDemo
             dogsShelter.Shelter(dog2);
             dogsShelter.Shelter(dog3);
 
-            dogsShelter.Release(1); // Releasing dog2
+            var myNewDogFromTHeShelter = dogsShelter.Release(1); // Releasing dog2
+
+
+            Cat cat1 = new Cat();
+
+            var genericAnimalShelter1 = new GenericAnimalShelter<Cat>();
+
+            var genericAnimalShelter2 = new GenericAnimalShelter<Dog>();
         }
     }
 }
