@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace Lesson_05_Principles_OOP.AbstractClass
 {
-    public class AfricanLion : Felidae
+    public class Tiger : Felidae
     {
-        public override bool CatchPrey(object prey)
+        protected bool Kill()
         {
             return true;
+        }
+
+        public override bool CatchPrey(object prey)
+        {
+            base.Hide();
+
+            return Kill();
         }
     }
 }

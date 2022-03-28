@@ -10,7 +10,6 @@ namespace Lesson_05_Principles_OOP.Encapsulation
     {
         // …
         private Paw frontLeft;
-
         private Paw frontRight;
         private Paw bottomLeft;
         private Paw bottomRight;
