@@ -45,6 +45,7 @@ namespace Lesson_06_SOLID_Principles.SRP
         public bool SendEmail(MailMessage message)
         {
             _smtpClient.Send(message);
+            return true;
         }
     }
 }
