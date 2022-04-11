@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_06_PetShop_WinForm",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_06_SOLID_Principles", "Lesson_06_SOLID_Principles\Lesson_06_SOLID_Principles.csproj", "{636FFF7A-D71A-45FD-9327-D0F1671697CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_07_DataFiles", "Lesson_07_DataFiles\Lesson_07_DataFiles.csproj", "{52E6A024-2C96-4C02-B835-35EDE63B678F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E6A024-2C96-4C02-B835-35EDE63B678F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E6A024-2C96-4C02-B835-35EDE63B678F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E6A024-2C96-4C02-B835-35EDE63B678F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E6A024-2C96-4C02-B835-35EDE63B678F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
