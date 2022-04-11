@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_05_Principles_OOP", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_05_ClassDiagram", "Lesson_05_ClassDiagram\Lesson_05_ClassDiagram.csproj", "{CC0EC62F-B844-443E-8E6E-2061676D6938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_06_PetShop", "Lesson_06_PetShop\Lesson_06_PetShop.csproj", "{57121925-8D1C-442F-A6E1-AE930FBD7B50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_06_PetShop", "Lesson_06_PetShop\Lesson_06_PetShop.csproj", "{57121925-8D1C-442F-A6E1-AE930FBD7B50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_06_PetShop_WinForm", "Lesson_06_PetShop_WinForm\Lesson_06_PetShop_WinForm.csproj", "{D6F8B641-F367-4027-BCB5-A3C08384C7F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lesson_06_PetShop_WinForm", "Lesson_06_PetShop_WinForm\Lesson_06_PetShop_WinForm.csproj", "{D6F8B641-F367-4027-BCB5-A3C08384C7F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson_06_SOLID_Principles", "Lesson_06_SOLID_Principles\Lesson_06_SOLID_Principles.csproj", "{636FFF7A-D71A-45FD-9327-D0F1671697CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{D6F8B641-F367-4027-BCB5-A3C08384C7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6F8B641-F367-4027-BCB5-A3C08384C7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6F8B641-F367-4027-BCB5-A3C08384C7F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636FFF7A-D71A-45FD-9327-D0F1671697CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
